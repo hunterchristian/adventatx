@@ -11,7 +11,12 @@ const config = {
 			fallback: null,
 			precompress: false
 		})
-	}
+	},
+	preprocess: [
+		preprocess({
+			postcss: true
+		})
+	]
 };
 
 export default config;
